@@ -17,8 +17,7 @@ class Config(Base):
     """
 
     OPENAI_API_KEY: str = (
-        os.getenv("OPENAI_API_KEY") 
-        or "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"
+        os.getenv("OPENAI_API_KEY")
     )
     LLM_MODEL: str = os.getenv("LLM_MODEL") or "openai_gpt"
     PINECONE_API_KEY: str = (
