@@ -22,7 +22,7 @@ class Config(Base):
     )
     LLM_MODEL: str = os.getenv("LLM_MODEL") or "openai_gpt"
     PINECONE_API_KEY: str = (
-        os.getenv("PINECONE_API_KEY") or "bceca74c-b1b7-4f81-b16a-ea19aabc053d"
+        os.getenv("PINECONE_API_KEY") or "pcsk_5ftniJ_F64PBDZE4rGxoqCPjP3sJ5aLkoB2WHW35WqkeY2DEUyq5pf1wik6SsibX55UvyC"
     )
 
 config = Config()
