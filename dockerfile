@@ -23,9 +23,12 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 
 
-#Running the FastAPI Dockerize application
+#Instructions for Running the FastAPI application in a Docker container
 # Build the Docker image
 # 1. docker build -t chatbot-app . 
 
 # Run the Docker container
-#docker run -d -p 8000:8000 -e OPENAI_API_KEY="" -e PINECONE_API_KEY="" chatbot-app
+#2. docker run -d -p 8000:8000 -e OPENAI_API_KEY="" -e PINECONE_API_KEY="" chatbot-app
+
+#3. Make sure the container is running. Go to the following Url in browser
+    #http://localhost:8000/chatbot/
