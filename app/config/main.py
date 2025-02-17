@@ -17,7 +17,7 @@ class Config(Base):
     """
 
     OPENAI_API_KEY: str = (
-        os.getenv("OPENAI_API_KEY")
+        os.getenv("OPENAI_API_KEY") or ""
     )
     LLM_MODEL: str = os.getenv("LLM_MODEL") or "openai_gpt"
     PINECONE_API_KEY: str = (
