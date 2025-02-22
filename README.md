@@ -22,6 +22,32 @@ The PDF Analyzer Chatbot is a FastAPI-based microservice designed to extract tex
 - **Contextual Query**: Responses: Uses relevant chunks as context to provide accurate and detailed responses.
 - **Create Embeddings**: Converts text chunks into embeddings using OpenAI's embedding model.
 
+## API Documentation
+
+### POST /chat/chat-completions/
+
+Processes chat queries against uploaded PDF documents.
+
+- **Request**: JSON
+    - `messages`: Array of chat messages (role, content)
+    - `max_tokens`: Integer (default: 1000)
+    - `temperature`: Float (default: 0.7)
+- **Response**: JSON with generated chat response.
+
+### POST /upload/
+
+Upload and processes PDF files.
+
+- **Request**: Multipart form data
+    - `files`:  PDF file(s)
+- **Response**: JSON with processed file details.
+
+### GET /chatbot/
+
+Renders the chatbot web interface.
+
+- **Response**: HTML content with desired UI.
+
 ## Project Structure
 
 The project follows a modular and scalable structure, designed for maintainability and ease of development:
